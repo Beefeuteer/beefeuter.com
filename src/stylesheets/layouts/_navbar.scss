@@ -1,0 +1,8 @@
+.container {
+    padding: 0 2rem;
+
+    @include media-breakpoint-up(sm) {
+        margin: 3rem auto;
+        max-width: 900px;
+    }
+}
