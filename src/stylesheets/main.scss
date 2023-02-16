@@ -1,14 +1,26 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 ///---------------------///
-/// 3. Bootstrap
+/// 1. Bootstrap
 /// ---------------------///
 @import "~bootstrap/scss/bootstrap";
 
 ///---------------------///
-/// 1. Layouts
+/// 2. Layouts
 /// ---------------------///
 @import "./layouts/navbar";
+@import "./layouts/footer";
 
 ///---------------------///
-/// 2. Pages
+/// 4. Abstracts
+/// ---------------------///
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/typography";
+
+///---------------------///
+/// 3. Pages
 /// ---------------------///
 @import "./pages/beefhome";

@@ -1,5 +1,8 @@
 .beefhome {
     padding: 0 2rem;
+    height: "100%";
+    // margin-top: auto;
+    margin-bottom: auto;
 
     &__title {
         display: flex;
@@ -21,7 +24,8 @@
     &__subtitle {
         display: block;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: $font-weight-normal;
         margin-right: auto;
+        color: $color-secondary;
     }
 }

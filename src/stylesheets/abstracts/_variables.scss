@@ -1,1 +1,46 @@
+///---------------------///
+/// 1. Colors
+/// ---------------------///
 
+// Primary Colors
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-warning: #ffc107;
+$color-info: #17a2b8;
+$color-light: #f8f9fa;
+$color-dark: #343a40;
+
+// Grays
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Other Colors
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-success-light: lighten($color-success, 10%);
+$color-danger-light: lighten($color-danger, 10%);
+$color-warning-light: lighten($color-warning, 10%);
+$color-info-light: lighten($color-info, 10%);
+$color-light-dark: darken($color-light, 5%);
+$color-dark-light: lighten($color-dark, 5%);
+
+///---------------------///
+/// 2. Font weights
+/// ---------------------///
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;

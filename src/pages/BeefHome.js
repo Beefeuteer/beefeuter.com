@@ -68,35 +68,11 @@ function BeefHome() {
             </h1>
 
             <p className="beefhome__subtitle">
+              <br />
               I'm a Front-end web developer that creates websites and web apps
-              with clean code, proper versioning, optimized tools, and
-              up-to-date technologies. Apart from knowing several frameworks, I
-              can also conveniently use vanilla HTML, CSS, and JS.
-            </p>
-
-            <button onClick={() => console.log("connect")}>
-              Let’s Connect
-              {/* <ArrowRightCircle size={25} /> */}
-            </button>
-          </section>
-        </div>
-        <div className="d-flex justify-content-center align-items-center">
-          <section>
-            <h1 className="beefhome__title">
-              <span className="banner__txt__rotate__name">{`Hi! I'm Bugra`}</span>
-              <span
-                dataPeriod="1000"
-                data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-              >
-                <span className="wrap">{text}</span>
-              </span>
-            </h1>
-
-            <p className="beefhome__subtitle">
-              I'm a Front-end web developer that creates websites and web apps
-              with clean code, proper versioning, optimized tools, and
-              up-to-date technologies. Apart from knowing several frameworks, I
-              can also conveniently use vanilla HTML, CSS, and JS.
+              with clean code,proper versioning, optimized tools, and up-to-date
+              technologies. <br /> <br /> Apart from knowing several frameworks,
+              I can also conveniently use vanilla HTML, CSS, and JS.
             </p>
 
             <button onClick={() => console.log("connect")}>
