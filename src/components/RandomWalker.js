@@ -133,10 +133,10 @@ const RandomWalker = ({ color, index }) => {
 const RandomWalkerGenerator = () => {
   return (
     <>
-      <RandomWalker color="#40404020" index={0} />
-      <RandomWalker color="#40404020" index={1} />
-      <RandomWalker color="#40404020" index={2} />
-      <RandomWalker color="#40404020" index={3} />
+      <RandomWalker color="#40404030" index={0} />
+      <RandomWalker color="#40404030" index={1} />
+      <RandomWalker color="#40404030" index={2} />
+      <RandomWalker color="#40404030" index={3} />
     </>
   );
 };
