@@ -4,6 +4,7 @@ import App from "./App";
 // import "./index.css";
 import "./stylesheets/main.scss";
 import { ThemeProvider } from "react-bootstrap";
+import RandomWalkerGenerator from "./components/RandomWalker";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
     minBreakpoint="xxs"
   >
+    <RandomWalkerGenerator />
     <App />
   </ThemeProvider>
 );

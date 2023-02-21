@@ -10,6 +10,7 @@ const RandomWalker = ({ color, index }) => {
 
   useEffect(() => {
     const viewport = viewportRef.current.getBoundingClientRect();
+    console.log("viewport: ", viewport, index);
     if (index === 0) {
       startX = viewport.width;
       startY = viewport.height;
@@ -28,14 +29,13 @@ const RandomWalker = ({ color, index }) => {
   }, []);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    const stepSize = 10;
+    const stepSize = 20;
 
     const interval = setInterval(() => {
       setPosition((prevState) => {
         const viewport = viewportRef.current.getBoundingClientRect();
         const corner = getRandomCorner(viewport);
+
         const dx = stepSize * Math.cos(corner.angle);
         const dy = stepSize * Math.sin(corner.angle);
         let newPosition = { x: prevState.x + dx, y: prevState.y + dy };
@@ -71,26 +71,6 @@ const RandomWalker = ({ color, index }) => {
     ctx.stroke();
   }, [path, color]);
 
-  // const getRandomCorner = (viewport) => {
-  //   const corner = Math.floor(Math.random() * 4);
-  //   switch (corner) {
-  //     case 0: // top-left
-  //       return { x: 0, y: 0, angle: Math.PI / 4 };
-  //     case 1: // top-right
-  //       return { x: viewport.width, y: 0, angle: (3 * Math.PI) / 4 };
-  //     case 2: // bottom-right
-  //       return {
-  //         x: viewport.width,
-  //         y: viewport.height,
-  //         angle: (5 * Math.PI) / 4,
-  //       };
-  //     case 3: // bottom-left
-  //       return { x: 0, y: viewport.height, angle: (7 * Math.PI) / 4 };
-  //     default:
-  //       return { x: 0, y: 0, angle: Math.PI / 4 };
-  //   }
-  // };
-
   const getRandomCorner = (viewport) => {
     const corner = Math.random();
 
@@ -117,9 +97,13 @@ const RandomWalker = ({ color, index }) => {
     <>
       <canvas
         ref={canvasRef}
-        width={window.innerWidth}
-        height={window.innerHeight}
-        style={{ position: "absolute", top: 0, left: 0 }}
+        width={window.innerWidth - 20}
+        height={window.innerHeight - 20}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+        }}
       />
       <div
         ref={viewportRef}
@@ -127,8 +111,9 @@ const RandomWalker = ({ color, index }) => {
           position: "absolute",
           top: 0,
           left: 0,
-          width: "100%",
-          height: "100%",
+          width: window.innerWidth - 20,
+          height: window.innerHeight - 20,
+
           overflow: "hidden",
         }}
       />

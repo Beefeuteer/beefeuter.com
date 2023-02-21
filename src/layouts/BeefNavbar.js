@@ -28,9 +28,9 @@ function BeefNavbar() {
               <Nav.Link as={Link} to="projects">
                 Projects
               </Nav.Link>
-              <Nav.Link as={Link} to="contact">
+              {/* <Nav.Link as={Link} to="contact">
                 Contact
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -45,10 +45,10 @@ function BeefNavbar() {
         <Route path="/projects" element={<BeefProjects />}>
           projects
         </Route>
-        <Route path="/contact" element={<BeefContact />}>
+        {/* <Route path="/contact" element={<BeefContact />}>
           contact
-        </Route>
-      </Routes>{" "}
+        </Route> */}
+      </Routes>
     </BrowserRouter>
   );
 }
