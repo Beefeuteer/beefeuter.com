@@ -55,7 +55,7 @@ const RandomWalker = ({ color, index }) => {
       });
     }, 200);
 
-    const stopTime = 150000; // 10 seconds in milliseconds
+    const stopTime = 250000; // 10 seconds in milliseconds
     const timeout = setTimeout(() => {
       clearInterval(interval);
     }, stopTime);
