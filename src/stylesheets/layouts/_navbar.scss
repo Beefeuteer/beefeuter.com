@@ -1,6 +1,7 @@
 .container {
     padding: 0 2rem;
-    background-color: white;
+    background-color: #ffffff90;
+    
     @include media-breakpoint-up(sm) {
         margin: 3rem auto;
         max-width: 900px;
@@ -8,7 +9,7 @@
 }
 
 .navbar {
-    background-color: white;
+    background-color: #ffffff90;
     border-radius: 10px;
     // make more transparent on the border
 }
