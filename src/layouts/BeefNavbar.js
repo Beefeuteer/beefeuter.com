@@ -13,13 +13,13 @@ function BeefNavbar() {
     <BrowserRouter>
       <Navbar bg="transparent" expand="lg" fixed="sticky">
         <Container>
-          <Navbar.Brand as={Link} to="home">
+          <Navbar.Brand as={Link} to="/">
             Beefeuter
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="home">
+              <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="resume">
@@ -36,7 +36,7 @@ function BeefNavbar() {
         </Container>
       </Navbar>
       <Routes>
-        <Route path="/home" element={<BeefHome />}>
+        <Route path="/" element={<BeefHome />}>
           home
         </Route>
         <Route path="/resume" element={<BeefResume />}>

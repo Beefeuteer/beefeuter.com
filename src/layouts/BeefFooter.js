@@ -44,8 +44,6 @@ function BeefFooter() {
             <FontAwesomeIcon className="footer__icon" icon={faStackOverflow} />
           </Button>
         </div>
-
-        <h1>selamlar</h1>
       </div>
     </Container>
     // </div>
