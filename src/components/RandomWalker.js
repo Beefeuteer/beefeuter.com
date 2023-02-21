@@ -111,6 +111,7 @@ const RandomWalker = ({ color, index }) => {
           position: "absolute",
           top: 0,
           left: 0,
+          zIndex: -1,
         }}
       />
       <div
@@ -121,7 +122,7 @@ const RandomWalker = ({ color, index }) => {
           left: 0,
           width: window.innerWidth - 20,
           height: window.innerHeight - 20,
-
+          zIndex: -1,
           overflow: "hidden",
         }}
       />
@@ -132,10 +133,10 @@ const RandomWalker = ({ color, index }) => {
 const RandomWalkerGenerator = () => {
   return (
     <>
-      <RandomWalker color="#40404040" index={0} />
-      <RandomWalker color="#40404040" index={1} />
-      <RandomWalker color="#40404040" index={2} />
-      <RandomWalker color="#40404040" index={3} />
+      <RandomWalker color="#40404020" index={0} />
+      <RandomWalker color="#40404020" index={1} />
+      <RandomWalker color="#40404020" index={2} />
+      <RandomWalker color="#40404020" index={3} />
     </>
   );
 };
