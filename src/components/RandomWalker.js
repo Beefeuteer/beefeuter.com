@@ -53,9 +53,17 @@ const RandomWalker = ({ color, index }) => {
         setPath((prevPath) => [...prevPath, newPosition]);
         return newPosition;
       });
-    }, 100);
+    }, 200);
 
-    return () => clearInterval(interval);
+    const stopTime = 150000; // 10 seconds in milliseconds
+    const timeout = setTimeout(() => {
+      clearInterval(interval);
+    }, stopTime);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
   }, []);
 
   useEffect(() => {
