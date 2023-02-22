@@ -70,14 +70,13 @@ function BeefHome() {
             <p className="beefhome__subtitle">
               <br />
               I'm a Front-end web developer that creates websites and web apps
-              with clean code,proper versioning, optimized tools, and up-to-date
-              technologies. <br /> <br /> Apart from knowing several frameworks,
+              with clean code, proper versioning, optimized tools, and up-to-date
+              technologies. <br /> <br /> Apart from being experienced with several frameworks,
               I can also conveniently use vanilla HTML, CSS, and JS. <br />
               <br />I actively participate in Stack Exchange sites such as
               Stackoverflow. <br /> <br />
-              Passionate about problem-solving and algorithm design, I enjoy
-              challenging myself by solving algorithm problems on platforms such
-              as LeetCode.
+              Since I'm passionate about problem-solving and algorithm design, I enjoy challenging
+              myself by solving algorithm problems on platforms as LeetCode.
             </p>
           </section>
         </div>
